@@ -1,7 +1,10 @@
+// Defining variables
+
 let income = 60000;
 let taxRate = .00;
 
 function calcTax(income, taxRate) {
+// Conditional statements
 if (income > 0 && income <= 10275) {
     taxRate = .10;
 } else if (income >= 10276 && income <= 41775) {
@@ -17,6 +20,7 @@ if (income > 0 && income <= 10275) {
 } else if (income >= 539901) {
     taxRate = .37;
 } 
+// Template literals and arithmetic operations
 console.log(`Your income is ${income}, your tax rate is ${taxRate}. This year, you'll pay $${income * taxRate} in taxes.`);
 }
 
